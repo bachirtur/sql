@@ -1,0 +1,74 @@
+Crée un site web interactif pédagogique pour enseigner le langage SQL et les bases de données relationnelles à des élèves (niveau lycée / débutant), en s’inspirant du contenu du document fourni.
+
+⚠️ Contraintes importantes :
+
+Ne pas utiliser de QCM
+Favoriser la pratique avec une console SQL interactive
+Explications claires, progressives et visuelles
+
+🧱 Structure du site :
+
+Page d’accueil :
+Présentation des bases de données relationnelles
+Définition : table (relation), attribut, tuple
+Module interactif 1 : Comprendre une table
+Afficher une table "LIVRES"
+Mettre en évidence : lignes, colonnes, attributs
+Interaction : cliquer sur un élément → afficher explication
+Module interactif 2 : Clé primaire
+Montrer une table avec erreurs (doublons)
+Simulation : bouton pour corriger
+Explication visuelle
+Module interactif 3 : Clé étrangère et relations
+Tables "LIVRES" et "AUTEURS"
+Animation du lien entre les deux (id_auteur)
+Visualisation des relations
+
+💻 Module principal : Console SQL interactive
+
+Zone de saisie SQL (textarea)
+Bouton "Exécuter"
+Résultat affiché dynamiquement (table HTML)
+Base de données simulée (en JavaScript ou SQLite Web)
+
+Requêtes proposées :
+
+SELECT * FROM livres
+SELECT titre FROM livres
+SELECT * FROM livres WHERE note > 8
+SELECT titre, nom FROM livres JOIN auteurs
+Module pratique guidé (sans QCM)
+Exercices :
+"Afficher tous les livres"
+"Trouver les livres après 1950"
+"Afficher les auteurs français"
+Correction affichée après exécution
+
+🎨 Interface utilisateur :
+
+Design moderne (HTML, CSS, JS)
+Boutons "Suivant", "Tester", "Voir solution"
+Animations simples
+
+⚙️ Techniques :
+
+HTML + CSS + JavaScript
+Utiliser une base simulée (tableaux JS ou SQL.js)
+Affichage dynamique des résultats
+
+🎓 Objectif pédagogique :
+
+Apprendre en manipulant
+Comprendre les relations entre tables
+Maîtriser les bases du SQL
+
+💡 Bonus :
+
+Ajouter un mode "défi" où l’élève écrit sa propre requête
+Ajouter un bouton "réinitialiser la base"
+
+📦 Résultat attendu :
+
+Code complet (HTML + CSS + JS)
+Fonctionnel directement dans un navigateur
+Clair et prêt à utiliser en classe
